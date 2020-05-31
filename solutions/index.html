@@ -8,8 +8,14 @@
   </head>
   <body>
     <div class="calculator">
-      <input type="text" class="calculator-screen" value="0" disabled />
-      <input type="text" class="calculator-screen" value="0" disabled />
+      <div id="result">
+        <div id="history" class="calculator-screen">
+          <p id="history-value">0</p>
+        </div>
+        <div id="output" class="calculator-screen">
+          <p id="output-value">0</p>
+        </div>
+      </div>
 
       <div class="calculator-keys">
         <button type="button" class="operator" value="+">+</button>
@@ -36,5 +42,15 @@
         <button type="button" class="equal-sign" value="=">=</button>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
+
+<!-- <input
+        type="text"
+        id="history-value"
+        class="calculator-screen"
+        value="0"
+        disabled
+      />
+      <input type="text" class="calculator-screen" value="0" disabled /> -->
